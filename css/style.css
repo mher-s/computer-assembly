@@ -275,17 +275,93 @@ ul {
   }
 }
 @media (max-width: 1024px) {
-  .about-lessons{
+  .about-lessons {
     flex-direction: column;
     align-items: center;
   }
-  .lesson-content{
+  .lesson-content {
     max-width: 100%;
   }
-  .about-lessons{
+  .about-lessons {
     margin-top: 50px;
   }
 }
-.pc-img{
+.pc-img {
   width: 100%;
+}
+.fast-start__title {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 48px;
+  color: #ffffff;
+  margin-left: 30px;
+}
+.fast-start {
+  margin-top: 40px;
+}
+.fast-start__titleBlock {
+  display: flex;
+}
+.fast-start__subtitle {
+  font-family: Roboto;
+  font-size: 16px;
+  color: #fff;
+  opacity: 0.5;
+  margin-top: 15px;
+}
+.percent {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 36px;
+  color: #ffffff;
+}
+
+.result__percentLine {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.result__blockLine {
+  display: flex;
+  align-items: center;
+}
+
+.result__block {
+  background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
+  height: 80px;
+  width: 100%;
+}
+.result__block-for75 {
+  background: linear-gradient(94.26deg, #7c6afa 9.51%, #c89afc 90.23%);
+  height: 60px;
+}
+.result__block-for50 {
+  height: 30px;
+}
+.result__block-forRes {
+  background: linear-gradient(94.26deg, #7c6afa 9.51%, #c89afc 90.23%);
+  height: 10px;
+}
+@media (max-width: 530px) {
+  .percent {
+    font-size: 16px;
+  }
+  .fast-start__title {
+    font-size: 24px;
+  }
+}
+.result__descriptionLine {
+  display: flex;
+}
+.result__description {
+  font-family: Roboto;
+  font-size: 14px;
+  color: #ffffff;
+  opacity: 0.5;
+  margin: 10px 10px 0 10px;
+}
+@media (max-width: 530px) {
+  .result__description{
+    font-size: 10px;
+  }
 }
