@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  background: url(../img/all-page-bg.jpg) repeat    ;
+  background: url(../img/all-page-bg.jpg) repeat;
 }
 .container {
   max-width: 1340px;
@@ -246,4 +246,46 @@ ul {
     max-width: 500px;
     padding-bottom: 20px;
   }
+}
+.about-lessons {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.lesson-content__title {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 48px;
+  color: #ffffff;
+}
+.lesson-content__description {
+  font-family: Roboto;
+  font-size: 16px;
+  color: #ffffff;
+  margin-top: 20px;
+}
+.lesson-content {
+  max-width: 600px;
+  margin: 120px 0px;
+}
+@media (max-width: 1380px) {
+  .lesson-content {
+    max-width: 300px;
+    margin: 30px 0;
+  }
+}
+@media (max-width: 1024px) {
+  .about-lessons{
+    flex-direction: column;
+    align-items: center;
+  }
+  .lesson-content{
+    max-width: 100%;
+  }
+  .about-lessons{
+    margin-top: 50px;
+  }
+}
+.pc-img{
+  width: 100%;
 }
