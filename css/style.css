@@ -361,10 +361,11 @@ ul {
   margin: 10px 10px 0 10px;
 }
 @media (max-width: 530px) {
-  .result__description{
+  .result__description {
     font-size: 10px;
   }
 }
+
 .profession-section{
   margin-top:120px;
 
@@ -422,4 +423,207 @@ margin-top: 20px;
   .profession-title{
 font-size: 35px;
   }
+}
+
+.training-program-section {
+  margin-top: 100px;
+}
+.training-program {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.training-program-stroke {
+  transform: rotate(180deg);
+}
+.training-program__title {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 48px;
+  color: #ffffff;
+  margin-top: 15px;
+}
+.training-program__description {
+  font-family: Roboto;
+  font-size: 16px;
+  color: #ffffff;
+  opacity: 0.5;
+  margin-top: 10px;
+}
+.training-program-middle-line {
+  margin-top: 30px;
+  width: 6px;
+  height: 677px;
+  background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
+}
+.training-week {
+  font-family: Roboto;
+  font-size: 14px;
+  text-align: right;
+  color: #ffffff;
+  opacity: 0.5;
+}
+.training-week__description {
+  font-family: Roboto;
+  font-size: 18px;
+  color: #ffffff;
+}
+.training-program__about {
+  display: flex;
+}
+.week-block-left {
+  text-align: right;
+  margin-right: 40px;
+  position: relative;
+}
+.week-block-left::before {
+  content: "";
+  width: 40px;
+  height: 2px;
+  position: absolute;
+  top: 24px;
+  right: -40px;
+  background: #fff;
+}
+
+.week-block-right {
+  margin-left: 40px;
+  position: relative;
+}
+.week-block-right::before {
+  content: "";
+  width: 40px;
+  height: 2px;
+  position: absolute;
+  top: 20px;
+  left: -40px;
+  background: #fff;
+}
+.tutor__title {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 48px;
+  color: #ffffff;
+  margin-left: 30px;
+}
+.program-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.tutor__name {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 24px;
+  color: #ffffff;
+  margin-top: 20px;
+}
+.tutor__proffesion {
+  font-family: Roboto;
+  font-size: 16px;
+  color: #ffffff;
+  opacity: 0.8;
+  margin-top: 10px;
+}
+
+.tutor__btn {
+  font-family: Roboto;
+  font-size: 16px;
+  color: #ffffff;
+  padding: 10px 30px;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 50px;
+  display: inline-block;
+  margin-top: 15px;
+}
+.tutor-title-block {
+  display: flex;
+  margin-top: 60px;
+}
+.tutor-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.tutor-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1024px) {
+  .tutor-box {
+    flex-direction: column;
+  }
+  .tutor__img {
+    margin-top: 20px;
+  }
+  .tutor__title {
+    font-size: 38px;
+  }
+}
+@media (max-width: 750px) {
+  .tutor__title {
+    font-size: 28px;
+  }
+}
+@media (max-width: 530px) {
+  .tutor__title {
+    font-size: 16px;
+    margin-top: 14px;
+  }
+}
+.subscribe {
+  display: flex;
+  margin-top: 40px;
+}
+.subscribe__title {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 48px;
+  text-align: center;
+  color: #ffffff;
+}
+.subscribe__subtitle {
+  font-family: Roboto;
+  font-size: 16px;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.5;
+}
+.subscribe__btn {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 10px 30px;
+  color: #ffffff;
+  background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
+  border-radius: 50px;
+  margin-left: -32px;
+  z-index: 1;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.subscribe__input {
+  background: #ffffff;
+  opacity: 0.25;
+  border-radius: 50px 0px 0px 50px;
+  outline: none;
+  font-weight: bold;
+  text-indent: 20px;
+  width: 100%;
+  max-width: 400px;
+  padding: 12px;
+}
+.subscribe__form {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+::placeholder {
+  font-family: Roboto;
+  font-weight: bold;
+  color: #000;
 }
