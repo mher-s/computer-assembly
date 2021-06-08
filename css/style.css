@@ -361,7 +361,87 @@ ul {
   margin: 10px 10px 0 10px;
 }
 @media (max-width: 530px) {
-  .result__description{
+  .result__description {
     font-size: 10px;
   }
+}
+.training-program-section {
+  margin-top: 100px;
+}
+.training-program {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.training-program-stroke {
+  transform: rotate(180deg);
+}
+.training-program__title {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 48px;
+  color: #ffffff;
+  margin-top: 15px;
+}
+.training-program__description {
+  font-family: Roboto;
+  font-size: 16px;
+  color: #ffffff;
+  opacity: 0.5;
+  margin-top: 10px;
+}
+.training-program-middle-line {
+  margin-top: 30px;
+  width: 6px;
+  height: 677px;
+  background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
+}
+.training-week {
+  font-family: Roboto;
+  font-size: 14px;
+  text-align: right;
+  color: #ffffff;
+  opacity: 0.5;
+}
+.training-week__description {
+  font-family: Roboto;
+  font-size: 18px;
+  color: #ffffff;
+}
+.training-program__about {
+  display: flex;
+}
+.week-block-left {
+  text-align: right;
+  margin-right: 40px;
+  position: relative;
+}
+.week-block-left::before {
+  content: "";
+  width: 40px;
+  height: 2px;
+  position: absolute;
+  top: 24px;
+  right: -40px;
+  background: #fff;
+}
+
+.week-block-right {
+  margin-left: 40px;
+  position: relative;
+}
+.week-block-right::before {
+  content: "";
+  width: 40px;
+  height: 2px;
+  position: absolute;
+  top: 20px;
+  left: -40px;
+  background: #fff;
+}
+
+.program-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
