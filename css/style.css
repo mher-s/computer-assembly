@@ -439,9 +439,78 @@ ul {
   left: -40px;
   background: #fff;
 }
-
+.tutor__title {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 48px;
+  color: #ffffff;
+  margin-left: 30px;
+}
 .program-list {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+.tutor__name {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 24px;
+  color: #ffffff;
+  margin-top: 20px;
+}
+.tutor__proffesion {
+  font-family: Roboto;
+  font-size: 16px;
+  color: #ffffff;
+  opacity: 0.8;
+  margin-top: 10px;
+}
+
+.tutor__btn {
+  font-family: Roboto;
+  font-size: 16px;
+  color: #ffffff;
+  padding: 10px 30px;
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 50px;
+  display: inline-block;
+  margin-top: 15px;
+}
+.tutor-title-block {
+  display: flex;
+  margin-top: 60px;
+}
+.tutor-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.tutor-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1024px) {
+  .tutor-box {
+    flex-direction: column;
+  }
+  .tutor__img {
+    margin-top: 20px;
+  }
+  .tutor__title {
+    font-size: 38px;
+  }
+}
+@media (max-width: 750px) {
+  .tutor__title {
+    font-size: 28px;
+  }
+}
+@media (max-width: 530px) {
+  .tutor__title {
+    font-size: 16px;
+    margin-top: 14px;
+  }
 }
