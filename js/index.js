@@ -14,4 +14,4 @@ let x = setInterval(function () {
     document.getElementById("demo").innerHTML = "EXPIRED";
   }
 }, 1000);
-let countDownDate = new Date("Jan 5, 2022 15:37:25").getTime();
+let countDownDate = new Date("July 1, 2021 15:37:25").getTime();
