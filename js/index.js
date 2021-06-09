@@ -1,4 +1,4 @@
-let x = setInterval(function () {
+setInterval(function () {
   let now = new Date().getTime();
   let distance = countDownDate - now;
   let day = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -17,4 +17,5 @@ let x = setInterval(function () {
     document.getElementById("sec").innerHTML = "EXP";
   }
 }, 1000);
+
 let countDownDate = new Date("July 9, 2021 13:38:25").getTime();
