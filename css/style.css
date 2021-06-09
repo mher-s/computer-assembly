@@ -533,6 +533,11 @@ ul {
   border-radius: 50px;
   display: inline-block;
   margin-top: 15px;
+  transition: 800ms;
+}
+.tutor__btn:hover {
+  background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
+  border: 1px solid transparent;
 }
 .tutor-title-block {
   display: flex;
