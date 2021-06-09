@@ -17,4 +17,4 @@ let x = setInterval(function () {
     document.getElementById("sec").innerHTML = "EXP";
   }
 }, 1000);
-let countDownDate = new Date("June 9, 2021 13:38:25").getTime();
+let countDownDate = new Date("July 9, 2021 13:38:25").getTime();
