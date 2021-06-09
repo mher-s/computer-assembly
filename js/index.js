@@ -11,7 +11,10 @@ let x = setInterval(function () {
   document.getElementById("sec").innerHTML = sec;
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+    document.getElementById("day").innerHTML = "EXP";
+    document.getElementById("hour").innerHTML = "EXP";
+    document.getElementById("min").innerHTML = "EXP";
+    document.getElementById("sec").innerHTML = "EXP";
   }
 }, 1000);
-let countDownDate = new Date("July 1, 2021 15:37:25").getTime();
+let countDownDate = new Date("June 9, 2021 13:38:25").getTime();
