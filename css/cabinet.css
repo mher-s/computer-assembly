@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
+}
+ul {
+  list-style-type: none;
+}
+.cabinet {
+  display: flex;
+}
+.sidebar {
+  margin: 10px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  height: 97vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 15%;
+  min-width: 180px;
+}
+.sidebar-list__btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.sidebar__list {
+  max-height: 80vh;
+  height: 100%;
+}
+.sidebar-list__btn {
+  font-family: Roboto;
+  font-size: 16px;
+  color: #000;
+  margin-top: 10px;
+  padding: 0 5px;
+}
+.main-content {
+  margin: 10px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  width: 85%;
+}
+.profile,
+.bills {
+  background: #f3f3f3;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 88vh;
+  margin: 10px;
+  justify-content: space-around;
+}
+.fa-user-circle {
+  font-size: 240px;
+}
+.profile__title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 16px;
+}
+.profile-phone-block,
+.profile-email-block,
+.profile-doubleFactor-block,
+.profile-address-block,
+.profile-id-block {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.profile__change--btn {
+  color: #000;
+  font-size: 20px;
+  text-decoration: none;
+}
+.profile__phone,
+.profile__email,
+.profile__factor,
+.profile__address,
+.profile__id,
+.id__number {
+  font-size: 20px;
+  color: #000;
+}
+.profile__picture {
+  display: flex;
+  justify-content: center;
+}
+.factor__status-active {
+  cursor: pointer;
+  font-size: 20px;
+  padding: 5px 20px;
+  border-radius: 25px;
+  background: linear-gradient(315deg, #00b712 0%, #5aff15 74%);
+}
+.factor__status-disable {
+  cursor: pointer;
+  color: #fff;
+  font-size: 20px;
+  padding: 5px 20px;
+  border-radius: 25px;
+  background: linear-gradient(315deg, #6b0f1a 0%, #b91372 74%);
+}
+.dashboard {
+  display: flex;
+}
+.bills__title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 16px;
+}
+.bills__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 20px;
+}
+.fa-plus-circle {
+  color: green;
+  font-size: 26px;
+}
+.fa-minus-circle {
+  color: red;
+  font-size: 26px;
+}
+
+@media (max-width: 1240px) {
+  .dashboard {
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile,
+  .bills {
+    width: 100%;
+  }
+}
+
+.cabinet-burger {
+  display: none;
+  width: 50px;
+  height: 50px;
+  background: #000;
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+@media (max-width: 700px) {
+  .sidebar {
+    display: none;
+  }
+  .main-content {
+    width: 100%;
+  }
+  .bills__block {
+    margin-top: 15px;
+    flex-direction: column;
+  }
+  .bills {
+    height: auto;
+  }
+  .profile__phone,
+  .profile__email,
+  .profile__factor,
+  .profile__address,
+  .profile__id,
+  .id__number {
+    font-size: 16px;
+  }
+  .profile__change--btn {
+    font-size: 16px;
+  }
+  .bills-text {
+    margin: 10px 0;
+  }
+  .fa-user-circle {
+    font-size: 200px;
+  }
+  .cabinet-burger {
+    display: block;
+  }
+  .sidebar-list__btn {
+    color: #fff;
+  }
+  .sidebar__list {
+    margin-top: 60px;
+    margin-left: 22px;
+  }
+  .fa-chart-line,
+  .fa-cog,
+  .fa-headset {
+    color: #fff;
+  }
+}
+.center-line {
+  background: #fff;
+  height: 2px;
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.center-line::before {
+  content: "";
+  position: absolute;
+  background: #fff;
+  height: 2px;
+  width: 100%;
+  top: -4px;
+  left: 0;
+}
+.center-line::after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  height: 2px;
+  width: 100%;
+  top: 4px;
+  left: 0;
+}
+.burger-opened {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+}
+
+.fa-times {
+  color: #fff;
+  font-size: 20px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.close {
+  display: none!important;
+}
