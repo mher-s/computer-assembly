@@ -34,3 +34,23 @@ cabinetBurger.addEventListener("click", () => {
     closeBtn.classList.remove("close");
   }
 });
+
+const cabinetTabs = document.querySelectorAll(".tab-btn");
+
+function eventListener(elem) {
+  elem.addEventListener("click", () => {
+    const clickedAttr = elem.getAttribute("data-btn");
+    const findBlock = document.getElementById(clickedAttr);
+    const tabContent = document.querySelectorAll(".tab-content");
+
+    tabContent.forEach((item) => {
+      item.classList.remove("active-tab");
+    });
+
+    findBlock.classList.add("active-tab");
+  });
+}
+
+cabinetTabs.forEach((elem) => {
+  eventListener(elem);
+});
