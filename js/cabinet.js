@@ -1,4 +1,4 @@
-let factorStatus = document.querySelector(".factorStatus");
+const factorStatus = document.querySelector(".factorStatus");
 
 factorStatus.addEventListener("click", () => {
   if (factorStatus.classList.contains("factor__status-active")) {
@@ -12,13 +12,13 @@ factorStatus.addEventListener("click", () => {
   }
 });
 
-let cabinetBurger = document.querySelector(".cabinet-burger");
+const cabinetBurger = document.querySelector(".cabinet-burger");
 
 cabinetBurger.addEventListener("click", () => {
-  let burgerOpened = document.querySelector(".burger-opened");
-  let centerLine = document.querySelector(".center-line");
-  let body = document.querySelector("body");
-  let closeBtn = document.querySelector(".fa-times");
+  const burgerOpened = document.querySelector(".burger-opened");
+  const centerLine = document.querySelector(".center-line");
+  const body = document.querySelector("body");
+  const closeBtn = document.querySelector(".fa-times");
 
   if (burgerOpened.classList.contains("active")) {
     burgerOpened.style.display = "none";
@@ -40,13 +40,22 @@ const cabinetTabs = document.querySelectorAll(".tab-btn");
 function eventListener(elem) {
   elem.addEventListener("click", () => {
     const clickedAttr = elem.getAttribute("data-btn");
+    const body = document.querySelector("body");
     const findBlock = document.getElementById(clickedAttr);
     const tabContent = document.querySelectorAll(".tab-content");
+    const burgerOpened = document.querySelector(".burger-opened");
+    const centerLine = document.querySelector(".center-line");
+    const closeBtn = document.querySelector(".fa-times");
 
     tabContent.forEach((item) => {
       item.classList.remove("active-tab");
     });
 
+    body.style.overflow = "";
+    burgerOpened.classList.remove("active");
+    centerLine.style.display = "block";
+    closeBtn.classList.add("close");
+    burgerOpened.style.display = "none";
     findBlock.classList.add("active-tab");
   });
 }

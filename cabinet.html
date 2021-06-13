@@ -101,15 +101,21 @@
         <ul class="sidebar__list sidebar-list">
           <li class="sidebar-list__item">
             <i class="fas fa-chart-line"></i>
-            <button class="sidebar-list__btn tab-btn" data-btn="dashboard">My dashboard</button>
+            <button class="sidebar-list__btn tab-btn" data-btn="dashboard">
+              My dashboard
+            </button>
           </li>
           <li class="sidebar-list__item">
             <i class="fas fa-cog"></i>
-            <button class="sidebar-list__btn tab-btn" data-btn="settings">Settings</button>
+            <button class="sidebar-list__btn tab-btn" data-btn="settings">
+              Settings
+            </button>
           </li>
           <li class="sidebar-list__item">
             <i class="fas fa-headset"></i>
-            <button class="sidebar-list__btn tab-btn" data-btn="support">Support</button>
+            <button class="sidebar-list__btn tab-btn" data-btn="support">
+              Support
+            </button>
           </li>
         </ul>
       </section>
@@ -189,19 +195,25 @@
           <ul class="sidebar__list sidebar-list">
             <li class="sidebar-list__item">
               <i class="fas fa-chart-line"></i>
-              <button class="sidebar-list__btn">My dashboard</button>
+              <button class="sidebar-list__btn tab-btn" data-btn="dashboard">
+                My dashboard
+              </button>
             </li>
             <li class="sidebar-list__item">
               <i class="fas fa-cog"></i>
-              <button class="sidebar-list__btn">Settings</button>
+              <button class="sidebar-list__btn tab-btn" data-btn="settings">
+                Settings
+              </button>
             </li>
             <li class="sidebar-list__item">
               <i class="fas fa-headset"></i>
-              <button class="sidebar-list__btn">Support</button>
+              <button class="sidebar-list__btn tab-btn" data-btn="support">
+                Support
+              </button>
             </li>
           </ul>
         </div>
-        <div class="settings tab-content" id="settings" >
+        <div class="settings tab-content" id="settings">
           <form action="#" class="setting-form" method="POST">
             <label class="input-text" for="fname"> First Name</label>
             <input id="fname" type="text" class="settings-input" />
@@ -525,6 +537,24 @@
             <input id="new-pass-repeat" type="tel" class="settings-input" />
             <button class="setting-submit" type="submit">Save Changes</button>
           </form>
+        </div>
+        <div class="support tab-content" id="support">
+          <img src="img/support-call-center.jpg" class="support__img" alt="" />
+          <p class="support__title">Contact Us</p>
+          <div class="support-contact">
+            <div class="support-phone">
+              <i class="fas fa-phone"></i>
+              <a href="tel: +374 00 00 00 00" class="support__phoneNumber">+374 00 00 00 00</a>
+            </div>
+            <div class="support-email">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto: test123@gmail.com" class="support__email">maxalay-axalay@gmail.com</a>
+            </div>
+            <div class="support-location">
+              <i class="fas fa-map-marked-alt"></i>
+              <p class="support__location">Улица пушкина дом калатушкина</p>
+            </div>
+          </div>
         </div>
       </section>
     </main>

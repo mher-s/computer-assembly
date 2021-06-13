@@ -258,8 +258,15 @@ ul {
   display: none !important;
 }
 
+.support {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .dashboard,
-.settings {
+.settings,
+.support {
   display: none;
 }
 .settings {
@@ -291,6 +298,55 @@ ul {
   cursor: pointer;
   background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
 }
-.active-tab{
+.active-tab {
   display: flex;
+}
+.support__img {
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 10px 10px 0 0;
+}
+
+@media (max-width: 700px) {
+  .support__img {
+    width: 70%;
+  }
+}
+
+
+.support__title {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 28px;
+}
+.support-phone,
+.support-email,
+.support-location {
+  display: flex;
+  margin-top: 10px;
+}
+.support__location,
+.support__email,
+.support__phoneNumber {
+  font-size: 24px;
+  text-decoration: none;
+  color: #000;
+  margin-left: 10px;
+}
+.fa-map-marked-alt,
+.fa-envelope,
+.fa-phone {
+  font-size: 26px;
+}
+@media (max-width: 470px) {
+  .fa-map-marked-alt,
+  .fa-envelope,
+  .fa-phone {
+    font-size: 16px;
+  }
+  .support__location,
+  .support__email,
+  .support__phoneNumber {
+    font-size: 14px;
+  }
 }
