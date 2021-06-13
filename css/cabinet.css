@@ -148,6 +148,7 @@ ul {
 }
 
 .cabinet-burger {
+  cursor: pointern;
   display: none;
   width: 50px;
   height: 50px;
@@ -254,5 +255,42 @@ ul {
   transform: translate(-50%, -50%);
 }
 .close {
-  display: none!important;
+  display: none !important;
+}
+
+.dashboard,
+.settings {
+  display: none;
+}
+.settings {
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+  justify-content: space-around;
+}
+.settings-input {
+  border: none;
+  padding: 10px;
+  margin: 5px 0;
+  outline: none;
+  width: 100%;
+  background: #f0f0f0;
+  border-radius: 15px;
+}
+.input-text {
+  font-family: Roboto;
+  font-size: 16px;
+}
+.setting-submit {
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  padding: 10px;
+  color: #fff;
+  cursor: pointer;
+  background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
+}
+.active-tab{
+  display: flex;
 }
