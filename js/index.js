@@ -19,3 +19,17 @@ setInterval(function () {
 }, 1000);
 
 let countDownDate = new Date("July 9, 2021 13:38:25").getTime();
+
+///burger part////
+let burger = document.querySelector(".burger");
+let burgerOpen = false;
+let menuList = document.querySelector(".menu__list");
+burger.addEventListener("click", () => {
+  if (!burgerOpen) {
+    burgerOpen = true;
+    burger.classList.add("open");
+  } else {
+    burger.classList.remove("open");
+    burgerOpen = false;
+  }
+});
